@@ -15,7 +15,7 @@ const activateUser = async (req, res) => {
             })
 
             if (activateUser.modifiedCount === 1) {
-                res.redirect(`https://goldrate-calculator-frontend.netlify.app`)
+                res.redirect(`https://goldrate-calculator-frontend.vercel.app`)
             } else {
                 res.status(404).json({
                     message: "User not found or account is already activated"
